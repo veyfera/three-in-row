@@ -162,6 +162,7 @@ function newGame()
         new_i = new_i - self.X
       end
       self.f[new_i] = self.colors[math.random(1,6)]
+      table.insert(self.check_cells, i)
       dump()
       ::continue::
     end
